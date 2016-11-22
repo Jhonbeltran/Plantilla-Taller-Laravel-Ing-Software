@@ -16,8 +16,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 </head>
 <body>
-    <div class="navbar-fixed teal">
-        <nav>
+    <div class="navbar-fixed">
+        <nav class="teal">
           <div class="nav-wrapper z-depth-0">
             <a href="{!!URL::to('/')!!}" class="brand-logo hide-on-med-and-down">&nbsp;&nbsp;Taller Laravel</a>
             <a href="{!!URL::to('/')!!}" class="brand-logo hide-on-large-only">Taller Laravel</a>
@@ -46,7 +46,7 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="brown-text text-darken-2 elegant">Enlaces</h5>
                 <ul>
-                  <li><a class="brown-text text-darken-2" href="https://github.com/Jhonbeltran">Contactacto</a></li>
+                  <li><a class="brown-text text-darken-2" href="https://github.com/Jhonbeltran">Contacto</a></li>
                 </ul>
               </div>
             </div>
