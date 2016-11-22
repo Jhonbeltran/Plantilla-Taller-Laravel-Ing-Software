@@ -1,6 +1,11 @@
 @extends('layouts.principal')
 
 @section('content')
+	<div class="row"></div>
+	<div class="row"></div>
+	<div class="row"></div>
+	<div class="row"></div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col s12 l6">
@@ -30,4 +35,10 @@
 	        </div>
 		{!!Form::close()!!}
 	</div>
+	<div class="row"></div>
+	<div class="row"></div>
+	<div class="row"></div>
+	<div class="row"></div>
+	<div class="row"></div>
+	<div class="row"></div>
 @stop

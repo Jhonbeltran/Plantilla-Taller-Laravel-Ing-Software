@@ -19,10 +19,15 @@
 @endif
 
 @section('content')
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
 <div class="container">
 	<div class="row center">
 		<div class="col s12">
-			<h5 class=" card-panel">Registro de Productos</h5>
+			<h5 class=" card-panel blue-grey white-text">Registro de Productos</h5>
 		</div>
 	</div>
 	<table class="highlight centered">
@@ -42,4 +47,9 @@
 		@endforeach
 	</table>
 </div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
 @stop
