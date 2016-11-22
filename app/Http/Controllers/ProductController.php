@@ -4,6 +4,7 @@ namespace taller\Http\Controllers;
 
 use Illuminate\Http\Request;
 use taller\Http\Controllers\Controller;
+use taller\Producto
 
 class ProductController extends Controller
 {
@@ -14,7 +15,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $productos = Producto::All();
+        return view('producto.index', compact('productos'));
     }
 
     /**
@@ -24,7 +26,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('producto.create');
     }
 
     /**
@@ -35,7 +37,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Producto::create(['nombre' => $request['nombre']]);
+        return redirect('producto')->with('message', 'store');
     }
 
     /**
@@ -57,7 +60,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $producto = Producto::find($id);
+        return view('producto.edit',['producto'=>$producto]);
     }
 
     /**
@@ -69,7 +73,10 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $producto = Producto::find($id);
+        $producto->fill($request->all());
+        $producto->save();
+        return redirect('producto')->with('message', 'edit');
     }
 
     /**
@@ -80,6 +87,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Producto::destroy($id);
+        return redirect('producto')->with('message', 'delete');
     }
 }
