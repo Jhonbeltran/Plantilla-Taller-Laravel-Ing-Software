@@ -4,7 +4,7 @@ namespace taller\Http\Controllers;
 
 use Illuminate\Http\Request;
 use taller\Http\Controllers\Controller;
-use taller\Producto
+use taller\Producto;
 
 class ProductController extends Controller
 {
